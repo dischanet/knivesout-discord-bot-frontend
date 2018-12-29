@@ -52,14 +52,14 @@
   </v-layout>
 </template>
 
-<script>
+<script lang="ts">
+import { Component, Emit, Prop, Vue } from 'nuxt-property-decorator'
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
 
-export default {
-  components: {
-    Logo,
-    VuetifyLogo
-  }
+@Component({
+  components: { Logo, VuetifyLogo }
+})
+export default class extends Vue {
 }
 </script>
